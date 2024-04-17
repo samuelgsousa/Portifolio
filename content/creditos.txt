@@ -1,0 +1,8 @@
+I = <a target="_blank" href="https://icons8.com/icon/37212/information">Information</a> ícone por <a target="_blank" href="https://icons8.com">Icons8</a>
+
+linkedin: <a target="_blank" href="https://icons8.com/icon/xuvGCOXi8Wyg/linkedin">LinkedIn</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+git-hub: <a target="_blank" href="https://icons8.com/icon/37VT6ruj1sNX/github">GitHub</a> ícone por <a target="_blank" href="https://icons8.com">Icons8</a>
+
+letter: <a target="_blank" href="https://icons8.com/icon/2848/letter">Mensagem</a> ícone por <a target="_blank" href="https://icons8.com">Icons8</a>
+

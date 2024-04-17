@@ -1,0 +1,250 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@400..700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Open Sans";
+    --bd-violet-bg: #6120c4;
+    
+}
+
+/* radial-gradient( circle, rgb(255, 88, 88), #5519afcb 70%); */
+
+header{
+    background-color: #5519afcb;
+    background-image: radial-gradient( circle, #69518b, #19073393 70%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    background: linear-gradient(to bottom, #5ca0f8af, #f7787888);
+    width: 100%;
+    height: 100%;
+}
+
+.apresentacao{
+    margin: auto;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0px;
+    padding: 5px;
+}
+
+.apresentacao h1{
+    font-size: clamp(4rem, 2rem + 7vw,10rem);
+    font-weight: 800;
+    margin: 0;
+}
+
+.apresentacao h1:first-of-type{
+    font-style: italic;
+    font-size: clamp(3rem, 2rem + 4vw,7rem);
+}
+
+.apresentacao p:last-of-type{
+    align-self: end;
+}
+
+.icons{
+    width: clamp(24px, 4px + 4vw,64px);
+    height: clamp(24px, 4px + 4vw,64px);
+}
+
+.icons:hover{
+    transition: 0.2s ease-in-out;
+    transform: translateY(-15px);
+}
+
+.apresentacao p{
+    font-size: clamp(0.8rem, 0.2rem + 2vw ,1.5rem);
+}
+
+#minSize{
+    display: none;
+}
+
+
+
+/*Segunda parte*/
+
+#projects{
+    text-align: center;
+    padding: 25px 0px;
+    font-size: 4rem;
+    color: white;
+    font-style: italic;
+    padding-top: 140px;
+    margin-bottom: 0px;
+}
+
+#warning{
+    position: absolute;
+    margin: auto;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Adjust the positioning to truly center the element */
+    color: rgba(255, 255, 255, 0.2);
+    pointer-events: none;
+    font-size: calc(5vh + 2vw);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    opacity: 1; /* Ensure full visibility initially */
+    transition: opacity 1s ease; /* Transition the opacity */
+    border-style: none;
+    margin-top: 50px;
+    width: 100%;
+}
+
+
+#conteudo{
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    justify-content: space-around;
+  
+}
+
+
+.projeto{
+    width: clamp(40rem, 20rem + 20vw,55rem);
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+
+}
+
+@media(max-width: 1300px){
+    #conteudo{
+        flex-direction: column;
+        align-items: center;
+        gap: 150px;
+        max-height: none;
+        height: 100%;
+        margin-top: 150px;
+    }
+    
+    @media(max-width: 700px){
+    .projeto {width: clamp(15rem, 15rem + 35vw,35rem);}
+
+        @media(max-width: 370px){ .projeto{ width: clamp(15rem, 15rem + 15vw,20rem); } }
+}
+    #projects{
+        margin-bottom: 30px;
+        padding-top: 70px;
+    }
+
+    #warning{
+        margin-top: 0px;
+    }
+
+}
+
+.mockups{
+    display: flex;
+    align-items: end;
+}
+
+.p1{
+    justify-content: end;
+
+}
+
+.p2{
+    justify-content: start;
+}
+
+
+.projeto h1{
+    font-size: 1.5rem;
+}
+
+
+.tema{
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.tema span{
+    font-size: 1rem;
+}
+
+.vPc{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.vMobile{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+#information{
+    width: 3.5%;
+    height: 3.5%;
+    margin-bottom: 4%;
+    cursor: pointer;
+}
+
+.custom-popover {
+    --bs-popover-max-width: 300px;
+    --bs-popover-border-color: var(--bd-violet-bg);
+    --bs-popover-header-bg: var(--bd-violet-bg);
+    --bs-popover-header-color: white;
+    --bs-popover-body-padding-x: 1rem;
+    --bs-popover-body-padding-y: .5rem;
+    
+  }
+
+.tema h1{
+    font-size: clamp(1rem, 1rem + 1vw,1.5rem);
+}
+
+.tema p{
+    font-size: clamp(2rem, 1rem + 2vw,2.5rem);
+}
+
+@media(max-width: 392px){
+    .apresentacao{
+        padding: 20px;
+    }
+    
+    .apresentacao h1 a{
+        display: none;
+    }
+    .apresentacao h1:first-of-type{
+        font-size: 2.4rem;
+    }
+
+    .apresentacao h1{
+        font-size: 2.4rem;
+        font-style: italic;
+    }
+
+    #minSize{
+        display: flex;
+        margin: auto;
+        gap: 20px;
+    }
+
+    .icons{
+        margin-top: 25px;
+        width: 48px;
+        height: 48px;
+    }
+
+    
+}

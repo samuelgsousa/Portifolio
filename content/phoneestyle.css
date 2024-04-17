@@ -1,0 +1,43 @@
+
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .phone {
+    width: clamp(4rem, 5rem + 5vw,10rem); /* 10rem  140px 160px*/
+    height: clamp(8rem, 9rem + 9vw,18rem); /* 18rem 253px 306px*/
+    position: relative;
+    border-radius: clamp(15px,5px + 5vw ,26px);
+    background-color: #161616;
+    position: absolute;
+    padding: 10px;
+    
+  }
+
+
+
+  .phone .screen {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    border-radius: clamp(15px,5px + 5vw ,26px);
+    background-color: #777;
+    overflow: hidden;
+  }
+
+  .phone .speaker {
+    top: 7px;
+    left: 20%;
+    width: 60%;
+    height: 10px;
+    border-radius: 48px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #161616;
+    z-index: 3;
+    position: absolute;
+  }
