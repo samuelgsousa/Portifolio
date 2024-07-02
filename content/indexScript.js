@@ -14,7 +14,5 @@ const checkVisible = () => { if ($('#warning').visible(true)){
 
 checkVisible()
 
-  $(window).scroll(() => checkVisible())   // Verifica a visibilidade do elemento ao rolar a página
+$(window).scroll(() => checkVisible())   // Verifica a visibilidade do elemento ao rolar a página
 
-
-  //rgba(255, 255, 255, 0.699)

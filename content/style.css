@@ -205,8 +205,7 @@ main{
     --bs-popover-header-bg: var(--bd-violet-bg);
     --bs-popover-header-color: white;
     --bs-popover-body-padding-x: 1rem;
-    --bs-popover-body-padding-y: .5rem;
-    
+    --bs-popover-body-padding-y: .5rem; 
   }
 
 .tema h1{
